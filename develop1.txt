@@ -1,0 +1,14 @@
+git checkout master
+#switches to master branch
+git branch -D develop newfeature
+#deletes "branches" and "newfeature"
+git push origin :develop :newfeature
+#pushes "develop" and "new feature"
+git tag -d V0.1
+#deletes the tag "v0.1"
+git push origin :V0.1
+#saves to origin with tag "V0.1"
+git reset --hard <last commit ID>
+#removes commit named <last commit ID>
+git push --force
+#saves everything
